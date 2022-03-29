@@ -30,6 +30,6 @@ img{
     width: 100px;
 }
 .kiemel{
-    border: 2pt red;
+    border: 2pt solid red;
     cursor: grab;
 }

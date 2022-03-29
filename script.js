@@ -13,6 +13,9 @@ function init(){
     $("footer p")[0].innerHTML = "Furkó Norbert";
     for (let index = 0; index < 3; index++) {
         $("#bal img")[index].addEventListener("click", kattintas);   
+        $("#bal img")[index].addEventListener("mouseover", felette);
+        $("#bal img")[index].addEventListener("mouseout", alatta);
+
     }
 }
 
@@ -22,8 +25,9 @@ function kattintas(){
 }
 
 function felette(){
-    for (let index = 0; index < 3; index++) {
-        $("#bal img")[index].addEventListener("mouseover", felette);
-        $("#bal img")[index].addEventListener("mouseout", felette);
-    }
+    event.target.className = "kiemel"; // ezzel hivatkozunk arra az elemre,amelyik kiváltotta az eseményt
+}
+
+function alatta(){
+    event.target.className = "";
 }
