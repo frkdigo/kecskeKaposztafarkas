@@ -1,5 +1,35 @@
-main{
-    width: 100%;
-    max-width: 1000px;
+main, header, article, aside, footer{
     border: 1px solid black;
+}
+
+main{
+    display: grid;
+    grid-template-areas:
+    "h h h"
+    "b a j"
+    "f f f";
+    padding: 10px;
+    margin: auto;
+}
+
+header{
+    grid-area: h;
+    margin-bottom: 20px;
+}
+
+header h1{
+    text-align: center;
+    margin: 15px;
+}
+
+header p{
+    margin: 0%;
+    font-size: 20px;
+}
+img{
+    width: 100px;
+}
+.kiemel{
+    border: 2pt red;
+    cursor: grab;
 }
