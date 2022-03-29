@@ -24,7 +24,6 @@ header h1{
 
 header p{
     margin: 0%;
-    font-size: 20px;
 }
 img{
     width: 100px;
@@ -32,4 +31,36 @@ img{
 .kiemel{
     border: 2pt solid red;
     cursor: grab;
+}
+article{
+    grid-area: a;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: cornflowerblue;
+}
+
+article img{
+    width: 100%;
+}
+.kicsi{
+    width: 100px;
+}
+
+.bal{
+    grid-area: b;
+}
+
+.jobb{
+    grid-area: j;
+}
+
+footer{
+    grid-area: f;
+    margin-top: 20px;
+}
+
+footer p{
+    margin: 0%;
+    background-color: cornflowerblue;
+    text-align: center;
 }
